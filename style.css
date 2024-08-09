@@ -1,0 +1,38 @@
+body {
+    font-family: Comfortaa, sans-serif;
+    align-items: center;
+    text-align: center;
+    background: rgb(143, 255, 199);
+}
+
+h1 {
+    margin: auto;
+    color: darkblue;
+}
+
+.btn {
+    margin: auto;
+    font-size: large;
+    color: darkblue;
+    background: lightblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+.min {
+    margin: auto;
+    color: darkblue;
+    background: lightblue;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    padding: 15px 15px 10px 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: darkblue;
+    background: lightblue;
+    border-radius: 15px;
+}
