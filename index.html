@@ -7,8 +7,8 @@
 
 <body>
     <div class="header">
-        <img src="https://assets.hackclub.com/flag-orpheus-left.svg" class="logo">
-        <h1>Welcome to BCCS Hackclub</h1>
+        <img id="orpheus" src="https://assets.hackclub.com/flag-orpheus-left.svg" class="logo animate">
+        <h1>Welcome to the BCCS Hackclub</h1>
     </div>
     <div class="box">
         <div class="min">
@@ -23,10 +23,14 @@
 
     <p>  </p>
     <p>  </p>
+    <div class="min">
+        <div class="input-container">
+            <span>£</span>
+            <input type="number" id="Amount" class="txt" placeholder="Amount in GDP">
+        </div>
+        <button class="btn gb" id="PayButton">Pay / Donate</button>
+    </div>
 
-    <button class="btn gb" id="DonateButton">Donate</button>
-    <button class="btn gb" id="PayButton">Pay / Donate £2.50</button>
-    <iframe src="https://hcb.hackclub.com/donations/start/bccs-hack-club" id="Donate" class="hidden iframe" style="border:none;" name="donateFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="512px" width="512px" allowfullscreen></iframe>
 
 </body>
 

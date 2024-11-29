@@ -2,10 +2,10 @@
     --maincolour: #ec3750;
     --boxcolour: #f9f9f9;
     --textcolour: #338eda;
+    font-family: Comfortaa, sans-serif;
 }
 
 body {
-    font-family: Comfortaa, sans-serif;
     align-items: center;
     text-align: center;
     background: var(--boxcolour);
@@ -23,6 +23,29 @@ h1 {
     background: var(--boxcolour);
     border: 1px solid var(--textcolour);
     border-radius: 5px;
+}
+
+.txt {
+    color: var(--textcolour);
+    font-size: large;
+    border: 1px solid var(--textcolour);
+    border-color: var(--textcolour);
+    background-color: var(--boxcolour);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: fit-content;
 }
 
 .hidden {
@@ -45,6 +68,7 @@ h1 {
     border: 1px solid var(--textcolour);
     border-radius: 15px;
     padding: 15px 15px 10px 10px;
+    margin: 10px;
     width: 100%;
     height: auto;
 }
@@ -63,13 +87,41 @@ h1 {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: auto;
     color: var(--textcolour);
     background: var(--boxcolour);
     border-radius: 15px;
+    text-align: right;
 }
 
 .logo {
     background-position: top left;
+}
+
+.animate {
+    animation: animate 1s ease-out 1;
+}
+
+.wave {
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: 0% 60%;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotateZ(1deg);
+    }
+    50% {
+        transform: rotateZ(-1deg);
+    }
 }
