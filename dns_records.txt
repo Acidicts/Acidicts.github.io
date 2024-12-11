@@ -1,0 +1,4 @@
+# DNS Records for Domain Verification with Zoho Mail
+
+# TXT Record for Zoho Mail Verification
+@   IN  TXT  "zoho-verification=zb45271055.zmverify.zoho.eu"
