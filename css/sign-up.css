@@ -5,6 +5,16 @@
     font-family: Comfortaa, sans-serif;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--textcolour);
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
 .min {
     flex: 1;
     padding: 10px;
