@@ -19,5 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('orpheus').classList.add('wave');
         document.getElementById('orpheus').classList.remove('animate');
     });
+    
+    window.onload = () => {
+        let size = document.getElementById('big_box').offsetHeight;
+        document.getElementById('small_box0').style.height = `${size}px`;
+        document.getElementById('small_box1').style.height = `${size}px`;
+    }
 });
-

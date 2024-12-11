@@ -62,7 +62,6 @@ h1 {
 .min {
     flex: 1;
     padding: 10px;
-    box-sizing: border-box;
     color: var(--textcolour);
     background: var(--boxcolour);
     border: 1px solid var(--textcolour);
@@ -70,7 +69,9 @@ h1 {
     padding: 15px 15px 10px 10px;
     margin: 10px;
     width: 100%;
-    height: auto;
+    text-align: center;
+    text-rendering: auto;
+    height: inherit;
 }
 
 .box {
@@ -78,6 +79,7 @@ h1 {
     align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100px;
     margin: auto;
     height: fit-content;
     color: var(--textcolour);
