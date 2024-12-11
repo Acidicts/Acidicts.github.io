@@ -1,0 +1,10 @@
+"":
+  - ttl: 600
+    type: MX
+    values:
+      - exchange: mx.zoho.eu
+        preference: 10
+      - exchange: mx2.zoho.eu
+        preference: 20
+      - exchange: mx3.zoho.eu
+        preference: 50
