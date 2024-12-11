@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/icon-rounded.png" type="image/png">
   <title>BCCS Hackclub Sign Up</title>
+  <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/sign-up.css">
   <script src="/js/sign-up.js"></script>
 </head>
 <header class="header">
-  <h1 class="left">Sign Up</h1>
-  <h2 class="mid">or</h2>
-  <h1 class="right">Express Interest</h1>
+  <h1 class="left fade_in">Sign Up</h1>
+  <h2 class="mid fade_in">or</h2>
+  <h1 class="right fade_in">Express Interest</h1>
 </header>
+<button class="btn mid fade_in" style="width: 100%;" onclick="window.location.href='/'">Home</button>
 <body>
-  <div id="box" class="min container">
+  <div id="box" class="slide_from_bottom" class="min container">
     <form 
       id="form"
       class="form"
@@ -29,7 +31,7 @@
       <input class="input" name="Year" type="number" placeholder="9" required>
       <label for="Form">Form</label>
       <input class="input" name="Form" type="text" placeholder="C" required>
-      <button type="submit">Submit</button>
+      <button class="btn" type="submit">Submit</button>
     </form>
   </div>
 </body>
